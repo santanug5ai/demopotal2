@@ -2,70 +2,11 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Truck, ShieldCheck, CreditCard, Headphones } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import ProductCard from '@/components/products/ProductCard'
-import { Product } from '@/types/product'
-
-// Mock data - will be replaced with API call
-const featuredProducts: Product[] = [
-  {
-    id: 'prod_laptop_001',
-    sku: 'LAPTOP-PRO-15-001',
-    name: 'Professional Laptop Pro 15',
-    slug: 'professional-laptop-pro-15',
-    description: 'High-performance laptop designed for professionals',
-    shortDescription: '15-inch professional laptop with 32GB RAM and 4K display',
-    price: {
-      amount: 1899.99,
-      currency: 'USD',
-      compareAt: 2299.99,
-    },
-    inventory: {
-      quantity: 45,
-      inStock: true,
-    },
-    images: [
-      {
-        url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800',
-        alt: 'Professional Laptop Pro 15',
-        isPrimary: true,
-        position: 1,
-      },
-    ],
-    status: 'active',
-    tags: ['new', 'featured', 'sale'],
-    ratingAverage: 4.5,
-    ratingCount: 128,
-  },
-  {
-    id: 'prod_phone_001',
-    sku: 'PHONE-ULTRA-001',
-    name: 'UltraPhone X1',
-    slug: 'ultraphone-x1',
-    description: 'The latest flagship smartphone',
-    shortDescription: 'Premium flagship smartphone with advanced camera system',
-    price: {
-      amount: 1199.99,
-      currency: 'USD',
-    },
-    inventory: {
-      quantity: 120,
-      inStock: true,
-    },
-    images: [
-      {
-        url: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800',
-        alt: 'UltraPhone X1',
-        isPrimary: true,
-        position: 1,
-      },
-    ],
-    status: 'active',
-    tags: ['new', 'featured', '5g'],
-    ratingAverage: 4.8,
-    ratingCount: 256,
-  },
-]
+import { getProducts } from '@/services/dataService'
 
 export default function HomePage() {
+  // Get featured products from .toon data source
+  const { data: featuredProducts } = getProducts({ limit: 4, tag: 'featured' });
   return (
     <div>
       {/* Hero Section */}

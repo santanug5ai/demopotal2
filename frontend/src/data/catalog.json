@@ -1,0 +1,378 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "catalog_id": "cat_electronics_2025",
+    "catalog_name": "Electronics Catalog 2025",
+    "created_at": "2025-11-20T00:00:00Z",
+    "updated_at": "2025-11-20T00:00:00Z",
+    "vendor": {
+      "id": "vendor_001",
+      "name": "TechCorp Electronics",
+      "contact": "sales@techcorp.example.com"
+    }
+  },
+  "categories": [
+    {
+      "id": "cat_laptops",
+      "name": "Laptops",
+      "slug": "laptops",
+      "description": "Professional and consumer laptops",
+      "parent_id": null,
+      "attributes": {
+        "icon": "laptop"
+      }
+    },
+    {
+      "id": "cat_smartphones",
+      "name": "Smartphones",
+      "slug": "smartphones",
+      "description": "Latest smartphones and mobile devices",
+      "parent_id": null,
+      "attributes": {
+        "icon": "smartphone"
+      }
+    },
+    {
+      "id": "cat_accessories",
+      "name": "Accessories",
+      "slug": "accessories",
+      "description": "Electronic accessories and peripherals",
+      "parent_id": null,
+      "attributes": {
+        "icon": "cable"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_laptop_001",
+      "sku": "LAPTOP-PRO-15-001",
+      "name": "Professional Laptop Pro 15",
+      "slug": "professional-laptop-pro-15",
+      "description": "High-performance laptop designed for professionals. Features the latest Intel processor, 32GB RAM, and a stunning 4K display. Perfect for creative work, development, and demanding applications.",
+      "short_description": "15-inch professional laptop with 32GB RAM and 4K display",
+      "category_ids": ["cat_laptops"],
+      "price": {
+        "amount": 1899.99,
+        "currency": "USD",
+        "compare_at": 2299.99
+      },
+      "inventory": {
+        "quantity": 45,
+        "track_inventory": true,
+        "allow_backorder": false
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+          "alt": "Professional Laptop Pro 15 - Front View",
+          "position": 1,
+          "is_primary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+          "alt": "Professional Laptop Pro 15 - Side View",
+          "position": 2,
+          "is_primary": false
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_001_silver",
+          "sku": "LAPTOP-PRO-15-001-SLV",
+          "options": {
+            "color": "Silver",
+            "storage": "512GB"
+          },
+          "price": {
+            "amount": 1899.99,
+            "currency": "USD"
+          },
+          "inventory": {
+            "quantity": 25,
+            "track_inventory": true
+          }
+        },
+        {
+          "id": "var_001_gray",
+          "sku": "LAPTOP-PRO-15-001-GRY",
+          "options": {
+            "color": "Space Gray",
+            "storage": "1TB"
+          },
+          "price": {
+            "amount": 2199.99,
+            "currency": "USD"
+          },
+          "inventory": {
+            "quantity": 20,
+            "track_inventory": true
+          }
+        }
+      ],
+      "attributes": {
+        "brand": "TechCorp",
+        "processor": "Intel Core i7 12th Gen",
+        "ram": "32GB DDR5",
+        "storage": "512GB NVMe SSD",
+        "display": "15.6\" 4K OLED",
+        "graphics": "NVIDIA RTX 3060",
+        "weight": "1.8 kg",
+        "battery": "Up to 12 hours",
+        "warranty": "2 years"
+      },
+      "seo": {
+        "title": "Professional Laptop Pro 15 - High Performance Laptop for Professionals",
+        "description": "Buy the Professional Laptop Pro 15 with 32GB RAM, 4K display, and Intel Core i7. Perfect for creative professionals and developers.",
+        "keywords": ["laptop", "professional laptop", "4K laptop", "high performance"]
+      },
+      "status": "active",
+      "tags": ["new", "featured", "sale"]
+    },
+    {
+      "id": "prod_phone_001",
+      "sku": "PHONE-ULTRA-001",
+      "name": "UltraPhone X1",
+      "slug": "ultraphone-x1",
+      "description": "The latest flagship smartphone with cutting-edge technology. Features a 6.7-inch AMOLED display, advanced camera system, and all-day battery life. Experience the future of mobile technology.",
+      "short_description": "Premium flagship smartphone with advanced camera system",
+      "category_ids": ["cat_smartphones"],
+      "price": {
+        "amount": 1199.99,
+        "currency": "USD",
+        "compare_at": null
+      },
+      "inventory": {
+        "quantity": 120,
+        "track_inventory": true,
+        "allow_backorder": false
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+          "alt": "UltraPhone X1 - Front Display",
+          "position": 1,
+          "is_primary": true
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1592286927505-b6e1f4c56c77",
+          "alt": "UltraPhone X1 - Back Camera",
+          "position": 2,
+          "is_primary": false
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_002_black_128",
+          "sku": "PHONE-ULTRA-001-BLK-128",
+          "options": {
+            "color": "Midnight Black",
+            "storage": "128GB"
+          },
+          "price": {
+            "amount": 1199.99,
+            "currency": "USD"
+          },
+          "inventory": {
+            "quantity": 60,
+            "track_inventory": true
+          }
+        },
+        {
+          "id": "var_002_blue_256",
+          "sku": "PHONE-ULTRA-001-BLU-256",
+          "options": {
+            "color": "Ocean Blue",
+            "storage": "256GB"
+          },
+          "price": {
+            "amount": 1399.99,
+            "currency": "USD"
+          },
+          "inventory": {
+            "quantity": 40,
+            "track_inventory": true
+          }
+        },
+        {
+          "id": "var_002_white_512",
+          "sku": "PHONE-ULTRA-001-WHT-512",
+          "options": {
+            "color": "Pearl White",
+            "storage": "512GB"
+          },
+          "price": {
+            "amount": 1599.99,
+            "currency": "USD"
+          },
+          "inventory": {
+            "quantity": 20,
+            "track_inventory": true
+          }
+        }
+      ],
+      "attributes": {
+        "brand": "TechCorp",
+        "display": "6.7\" AMOLED",
+        "processor": "Snapdragon 8 Gen 3",
+        "ram": "12GB",
+        "camera": "108MP Triple Camera",
+        "battery": "5000mAh",
+        "5g": "Yes",
+        "wireless_charging": "Yes",
+        "water_resistance": "IP68"
+      },
+      "seo": {
+        "title": "UltraPhone X1 - Premium Flagship Smartphone",
+        "description": "Experience the UltraPhone X1 with 108MP camera, 6.7\" AMOLED display, and 5G connectivity. The ultimate smartphone.",
+        "keywords": ["smartphone", "5G phone", "flagship phone", "camera phone"]
+      },
+      "status": "active",
+      "tags": ["new", "featured", "5g"]
+    },
+    {
+      "id": "prod_acc_001",
+      "sku": "HEADPHONE-NC-001",
+      "name": "Premium Noise Cancelling Headphones",
+      "slug": "premium-noise-cancelling-headphones",
+      "description": "Immerse yourself in pure sound with our Premium Noise Cancelling Headphones. Industry-leading ANC technology, premium audio quality, and up to 30 hours of battery life. Perfect for travel and daily commute.",
+      "short_description": "Wireless headphones with active noise cancellation",
+      "category_ids": ["cat_accessories"],
+      "price": {
+        "amount": 349.99,
+        "currency": "USD",
+        "compare_at": 399.99
+      },
+      "inventory": {
+        "quantity": 85,
+        "track_inventory": true,
+        "allow_backorder": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+          "alt": "Premium Noise Cancelling Headphones",
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [],
+      "attributes": {
+        "brand": "TechCorp Audio",
+        "type": "Over-ear",
+        "connectivity": "Bluetooth 5.2",
+        "battery_life": "30 hours",
+        "anc": "Active Noise Cancellation",
+        "weight": "250g",
+        "color": "Black"
+      },
+      "seo": {
+        "title": "Premium Noise Cancelling Headphones - Wireless ANC Headphones",
+        "description": "Premium wireless headphones with active noise cancellation. 30-hour battery life and superior audio quality.",
+        "keywords": ["headphones", "noise cancelling", "wireless headphones", "ANC"]
+      },
+      "status": "active",
+      "tags": ["sale", "popular"]
+    },
+    {
+      "id": "prod_laptop_002",
+      "sku": "LAPTOP-SLIM-13-001",
+      "name": "SlimBook Air 13",
+      "slug": "slimbook-air-13",
+      "description": "Ultraportable laptop that doesn't compromise on performance. Ultra-thin design, all-day battery life, and powerful performance in a sleek package. Ideal for students and mobile professionals.",
+      "short_description": "Ultra-thin 13-inch laptop with all-day battery",
+      "category_ids": ["cat_laptops"],
+      "price": {
+        "amount": 999.99,
+        "currency": "USD",
+        "compare_at": null
+      },
+      "inventory": {
+        "quantity": 65,
+        "track_inventory": true,
+        "allow_backorder": false
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+          "alt": "SlimBook Air 13",
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_003_gold",
+          "sku": "LAPTOP-SLIM-13-001-GLD",
+          "options": {
+            "color": "Gold",
+            "storage": "256GB"
+          },
+          "price": {
+            "amount": 999.99,
+            "currency": "USD"
+          },
+          "inventory": {
+            "quantity": 30,
+            "track_inventory": true
+          }
+        },
+        {
+          "id": "var_003_silver",
+          "sku": "LAPTOP-SLIM-13-001-SLV",
+          "options": {
+            "color": "Silver",
+            "storage": "512GB"
+          },
+          "price": {
+            "amount": 1199.99,
+            "currency": "USD"
+          },
+          "inventory": {
+            "quantity": 35,
+            "track_inventory": true
+          }
+        }
+      ],
+      "attributes": {
+        "brand": "TechCorp",
+        "processor": "Intel Core i5",
+        "ram": "16GB",
+        "storage": "256GB SSD",
+        "display": "13.3\" Retina",
+        "weight": "1.2 kg",
+        "battery": "Up to 18 hours",
+        "warranty": "1 year"
+      },
+      "seo": {
+        "title": "SlimBook Air 13 - Ultra-Portable Laptop",
+        "description": "Ultra-thin SlimBook Air 13 with 18-hour battery life. Perfect laptop for students and professionals on the go.",
+        "keywords": ["ultrabook", "thin laptop", "portable laptop", "student laptop"]
+      },
+      "status": "active",
+      "tags": ["popular"]
+    }
+  ],
+  "collections": [
+    {
+      "id": "col_holiday_2025",
+      "name": "Holiday Sale 2025",
+      "slug": "holiday-sale-2025",
+      "description": "Amazing deals for the holiday season",
+      "product_ids": ["prod_laptop_001", "prod_acc_001"],
+      "rules": {
+        "tags": ["sale"]
+      }
+    },
+    {
+      "id": "col_new_arrivals",
+      "name": "New Arrivals",
+      "slug": "new-arrivals",
+      "description": "Latest products in our catalog",
+      "product_ids": ["prod_laptop_001", "prod_phone_001"],
+      "rules": {
+        "tags": ["new"]
+      }
+    }
+  ]
+}

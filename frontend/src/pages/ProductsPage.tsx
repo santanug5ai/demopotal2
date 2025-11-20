@@ -2,71 +2,13 @@ import { useState } from 'react'
 import { Filter } from 'lucide-react'
 import ProductCard from '@/components/products/ProductCard'
 import { Button } from '@/components/ui/button'
-import { Product } from '@/types/product'
-
-// Mock data - will be replaced with API call
-const products: Product[] = [
-  {
-    id: 'prod_laptop_001',
-    sku: 'LAPTOP-PRO-15-001',
-    name: 'Professional Laptop Pro 15',
-    slug: 'professional-laptop-pro-15',
-    description: 'High-performance laptop designed for professionals',
-    shortDescription: '15-inch professional laptop with 32GB RAM and 4K display',
-    price: {
-      amount: 1899.99,
-      currency: 'USD',
-      compareAt: 2299.99,
-    },
-    inventory: {
-      quantity: 45,
-      inStock: true,
-    },
-    images: [
-      {
-        url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800',
-        alt: 'Professional Laptop Pro 15',
-        isPrimary: true,
-        position: 1,
-      },
-    ],
-    status: 'active',
-    tags: ['new', 'featured', 'sale'],
-    ratingAverage: 4.5,
-    ratingCount: 128,
-  },
-  {
-    id: 'prod_phone_001',
-    sku: 'PHONE-ULTRA-001',
-    name: 'UltraPhone X1',
-    slug: 'ultraphone-x1',
-    description: 'The latest flagship smartphone',
-    shortDescription: 'Premium flagship smartphone with advanced camera system',
-    price: {
-      amount: 1199.99,
-      currency: 'USD',
-    },
-    inventory: {
-      quantity: 120,
-      inStock: true,
-    },
-    images: [
-      {
-        url: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800',
-        alt: 'UltraPhone X1',
-        isPrimary: true,
-        position: 1,
-      },
-    ],
-    status: 'active',
-    tags: ['new', 'featured'],
-    ratingAverage: 4.8,
-    ratingCount: 256,
-  },
-]
+import { getProducts } from '@/services/dataService'
 
 export default function ProductsPage() {
   const [showFilters, setShowFilters] = useState(false)
+
+  // Get all products from .toon data source
+  const { data: products, pagination } = getProducts({ limit: 20 })
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -153,7 +95,7 @@ export default function ProductsPage() {
           {/* Toolbar */}
           <div className="mb-6 flex items-center justify-between">
             <p className="text-sm text-gray-600">
-              Showing {products.length} products
+              Showing {pagination.total} products from .toon data source
             </p>
             <div className="flex items-center gap-4">
               <Button
