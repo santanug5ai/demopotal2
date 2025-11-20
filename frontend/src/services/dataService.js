@@ -8,21 +8,21 @@ const transformProduct = (product) => ({
   name: product.name,
   slug: product.slug,
   description: product.description,
-  shortDescription: product.short_description,
+  shortDescription: product.shortDescription || product.short_description,
   price: {
     amount: product.price.amount,
     currency: product.price.currency,
-    compareAt: product.price.compare_at,
+    compareAt: product.price.compareAt || product.price.compare_at,
   },
   inventory: {
     quantity: product.inventory.quantity,
-    inStock: product.inventory.quantity > 0,
+    inStock: product.inventory.inStock || product.inventory.quantity > 0,
   },
-  images: product.images,
-  variants: product.variants,
-  attributes: product.attributes,
+  images: product.images || [],
+  variants: product.variants || [],
+  attributes: product.attributes || {},
   status: product.status,
-  tags: product.tags,
+  tags: product.tags || [],
   ratingAverage: 4.5, // Mock rating
   ratingCount: Math.floor(Math.random() * 200) + 50, // Mock count
 });

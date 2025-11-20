@@ -14,7 +14,7 @@ cat_laptops,Laptops,laptops,"Professional and consumer laptops"
 cat_smartphones,Smartphones,smartphones,"Latest smartphones and mobile devices"
 cat_accessories,Accessories,accessories,"Electronic accessories and peripherals"
 
-products[4]:
+products[30]:
 - id: "prod_laptop_001"
   sku: "LAPTOP-PRO-15-001"
   name: "Professional Laptop Pro 15"
@@ -158,6 +158,858 @@ var_003_silver,LAPTOP-SLIM-13-001-SLV,Silver,512GB,1199.99,35
     keywords[3]: ultrabook,"thin laptop","portable laptop"
   status: "active"
   tags[1]: popular
+
+- id: "prod_laptop_003"
+  sku: "LAPTOP-GAME-17-001"
+  name: "Gaming Beast Pro 17"
+  slug: "gaming-beast-pro-17"
+  description: "Ultimate gaming laptop with RTX 4080, 64GB RAM, and 17-inch 240Hz display. Dominate any game with maximum settings."
+  short_description: "17-inch gaming laptop with RTX 4080 and 240Hz display"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 2899.99
+    currency: "USD"
+    compare_at: 3299.99
+  inventory:
+    quantity: 25
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1603302576837-37561b2e2302","Gaming Beast Pro 17",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Gaming"
+    processor: "Intel Core i9 13th Gen"
+    ram: "64GB DDR5"
+    storage: "2TB NVMe SSD"
+    display: "17.3\" 240Hz QHD"
+    graphics: "NVIDIA RTX 4080"
+    weight: "2.8 kg"
+    battery: "Up to 6 hours"
+    warranty: "2 years"
+  seo:
+    title: "Gaming Beast Pro 17 - Ultimate Gaming Laptop"
+    description: "High-performance gaming laptop with RTX 4080 graphics."
+    keywords[3]: "gaming laptop","RTX 4080","gaming pc"
+  status: "active"
+  tags[2]: featured,sale
+
+- id: "prod_laptop_004"
+  sku: "LAPTOP-BUS-14-001"
+  name: "Business Elite 14"
+  slug: "business-elite-14"
+  description: "Professional business laptop with enterprise-grade security, long battery life, and premium build quality."
+  short_description: "14-inch business laptop with enterprise security"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 1499.99
+    currency: "USD"
+  inventory:
+    quantity: 40
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1588872657578-7efd1f1555ed","Business Elite 14",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Business"
+    processor: "Intel Core i7"
+    ram: "16GB DDR4"
+    storage: "512GB SSD"
+    display: "14\" FHD IPS"
+    weight: "1.4 kg"
+    battery: "Up to 16 hours"
+    warranty: "3 years"
+  seo:
+    title: "Business Elite 14 - Professional Business Laptop"
+    description: "Enterprise-grade laptop with security features."
+    keywords[3]: "business laptop","enterprise laptop","professional laptop"
+  status: "active"
+  tags[1]: popular
+
+- id: "prod_laptop_005"
+  sku: "LAPTOP-CREATE-15-001"
+  name: "Creator Studio 15"
+  slug: "creator-studio-15"
+  description: "Content creator's dream laptop with color-accurate 4K OLED display, powerful GPU, and optimized for creative applications."
+  short_description: "15-inch creator laptop with 4K OLED display"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 2199.99
+    currency: "USD"
+  inventory:
+    quantity: 30
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1593642632823-8f785ba67e45","Creator Studio 15",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Pro"
+    processor: "Intel Core i9"
+    ram: "32GB DDR5"
+    storage: "1TB NVMe SSD"
+    display: "15.6\" 4K OLED 100% DCI-P3"
+    graphics: "NVIDIA RTX 4070"
+    weight: "2.1 kg"
+    battery: "Up to 10 hours"
+    warranty: "2 years"
+  seo:
+    title: "Creator Studio 15 - Content Creation Laptop"
+    description: "Perfect laptop for creators with color-accurate display."
+    keywords[3]: "creator laptop","video editing laptop","photo editing"
+  status: "active"
+  tags[2]: featured,new
+
+- id: "prod_laptop_006"
+  sku: "LAPTOP-STUDENT-15-001"
+  name: "Student Buddy 15"
+  slug: "student-buddy-15"
+  description: "Affordable and reliable laptop perfect for students. Great performance for everyday tasks and study needs."
+  short_description: "Budget-friendly 15-inch laptop for students"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 599.99
+    currency: "USD"
+  inventory:
+    quantity: 80
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1484788984921-03950022c9ef","Student Buddy 15",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Value"
+    processor: "Intel Core i3"
+    ram: "8GB DDR4"
+    storage: "256GB SSD"
+    display: "15.6\" FHD"
+    weight: "1.7 kg"
+    battery: "Up to 8 hours"
+    warranty: "1 year"
+  seo:
+    title: "Student Buddy 15 - Affordable Student Laptop"
+    description: "Budget-friendly laptop perfect for students."
+    keywords[3]: "student laptop","budget laptop","affordable laptop"
+  status: "active"
+  tags[1]: popular
+
+- id: "prod_laptop_007"
+  sku: "LAPTOP-ULTRA-14-001"
+  name: "UltraBook X14"
+  slug: "ultrabook-x14"
+  description: "Premium ultrabook with stunning design, exceptional performance, and all-day battery life in a lightweight chassis."
+  short_description: "Premium 14-inch ultrabook with all-day battery"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 1799.99
+    currency: "USD"
+  inventory:
+    quantity: 35
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2","UltraBook X14",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Premium"
+    processor: "Intel Core i7"
+    ram: "16GB"
+    storage: "512GB SSD"
+    display: "14\" 2.8K OLED"
+    weight: "1.1 kg"
+    battery: "Up to 20 hours"
+    warranty: "2 years"
+  seo:
+    title: "UltraBook X14 - Premium Ultrabook"
+    description: "Lightweight premium ultrabook with exceptional battery."
+    keywords[3]: ultrabook,"premium laptop","lightweight laptop"
+  status: "active"
+  tags[2]: new,featured
+
+- id: "prod_laptop_008"
+  sku: "LAPTOP-WORK-16-001"
+  name: "WorkStation Pro 16"
+  slug: "workstation-pro-16"
+  description: "Professional workstation laptop for engineers, architects, and developers. Powerful specs with ISV certifications."
+  short_description: "16-inch workstation laptop for professionals"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 3499.99
+    currency: "USD"
+  inventory:
+    quantity: 15
+    track_inventory: true
+    allow_backorder: true
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1616763355603-9755a640a287","WorkStation Pro 16",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Professional"
+    processor: "Intel Xeon"
+    ram: "64GB ECC"
+    storage: "2TB NVMe SSD"
+    display: "16\" 4K IPS"
+    graphics: "NVIDIA RTX A5000"
+    weight: "2.5 kg"
+    battery: "Up to 8 hours"
+    warranty: "3 years"
+  seo:
+    title: "WorkStation Pro 16 - Professional Workstation"
+    description: "High-end workstation for demanding professional work."
+    keywords[3]: workstation,"professional laptop","engineering laptop"
+  status: "active"
+  tags[1]: featured
+
+- id: "prod_laptop_009"
+  sku: "LAPTOP-CONVERT-13-001"
+  name: "FlexBook 2-in-1 13"
+  slug: "flexbook-2in1-13"
+  description: "Versatile 2-in-1 laptop that transforms into a tablet. Touch screen with stylus support for maximum flexibility."
+  short_description: "13-inch 2-in-1 convertible laptop with stylus"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 1299.99
+    currency: "USD"
+  inventory:
+    quantity: 50
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae","FlexBook 2-in-1 13",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Flex"
+    processor: "Intel Core i5"
+    ram: "16GB"
+    storage: "512GB SSD"
+    display: "13.3\" FHD Touch"
+    weight: "1.3 kg"
+    battery: "Up to 12 hours"
+    warranty: "2 years"
+  seo:
+    title: "FlexBook 2-in-1 13 - Convertible Laptop Tablet"
+    description: "Versatile 2-in-1 laptop with touch screen and stylus."
+    keywords[3]: "2-in-1 laptop","convertible laptop","tablet laptop"
+  status: "active"
+  tags[1]: new
+
+- id: "prod_laptop_010"
+  sku: "LAPTOP-ECONOMY-15-001"
+  name: "EconoBook 15"
+  slug: "econobook-15"
+  description: "Basic laptop for everyday computing needs. Perfect for web browsing, email, and document work at an unbeatable price."
+  short_description: "Entry-level 15-inch laptop for basic tasks"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 399.99
+    currency: "USD"
+    compare_at: 499.99
+  inventory:
+    quantity: 100
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1588872657578-7efd1f1555ed","EconoBook 15",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Basic"
+    processor: "Intel Celeron"
+    ram: "4GB DDR4"
+    storage: "128GB SSD"
+    display: "15.6\" HD"
+    weight: "1.9 kg"
+    battery: "Up to 6 hours"
+    warranty: "1 year"
+  seo:
+    title: "EconoBook 15 - Budget Laptop"
+    description: "Affordable laptop for basic computing needs."
+    keywords[3]: "cheap laptop","budget laptop","entry laptop"
+  status: "active"
+  tags[2]: sale,popular
+
+- id: "prod_phone_002"
+  sku: "PHONE-PRO-002"
+  name: "ProPhone Max"
+  slug: "prophone-max"
+  description: "Premium flagship with advanced camera system, A17 Pro chip, and titanium design. The ultimate smartphone experience."
+  short_description: "Premium flagship with advanced features"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 1399.99
+    currency: "USD"
+  inventory:
+    quantity: 80
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1592286927505-b6e1f4c56c77","ProPhone Max",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Mobile"
+    display: "6.9\" Super Retina XDR"
+    processor: "A17 Pro"
+    ram: "8GB"
+    camera: "48MP Triple Camera System"
+    battery: "4500mAh"
+    5g: "Yes"
+    wireless_charging: "Yes"
+    water_resistance: "IP68"
+  seo:
+    title: "ProPhone Max - Premium Flagship Smartphone"
+    description: "The ultimate smartphone with advanced features."
+    keywords[3]: "flagship phone","premium smartphone","pro phone"
+  status: "active"
+  tags[2]: new,featured
+
+- id: "prod_phone_003"
+  sku: "PHONE-BUDGET-003"
+  name: "ValuePhone A1"
+  slug: "valuephone-a1"
+  description: "Affordable smartphone with essential features. Great performance for everyday use without breaking the bank."
+  short_description: "Budget-friendly smartphone with essential features"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 299.99
+    currency: "USD"
+  inventory:
+    quantity: 150
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1598327105666-5b89351aff97","ValuePhone A1",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Value"
+    display: "6.5\" HD+ IPS"
+    processor: "Snapdragon 680"
+    ram: "4GB"
+    camera: "48MP Dual Camera"
+    battery: "5000mAh"
+    5g: "No"
+    wireless_charging: "No"
+    water_resistance: "IP52"
+  seo:
+    title: "ValuePhone A1 - Affordable Smartphone"
+    description: "Budget smartphone with great value."
+    keywords[3]: "budget phone","affordable smartphone","cheap phone"
+  status: "active"
+  tags[2]: popular,sale
+
+- id: "prod_phone_004"
+  sku: "PHONE-MID-004"
+  name: "MidRange Pro 5G"
+  slug: "midrange-pro-5g"
+  description: "Perfect balance of features and price. 5G connectivity, great camera, and smooth performance for everyday use."
+  short_description: "Mid-range 5G smartphone with balanced features"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 599.99
+    currency: "USD"
+  inventory:
+    quantity: 100
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb","MidRange Pro 5G",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp"
+    display: "6.6\" AMOLED 120Hz"
+    processor: "Snapdragon 7 Gen 2"
+    ram: "8GB"
+    camera: "64MP Triple Camera"
+    battery: "5000mAh"
+    5g: "Yes"
+    wireless_charging: "Yes"
+    water_resistance: "IP67"
+  seo:
+    title: "MidRange Pro 5G - Balanced Smartphone"
+    description: "Perfect mid-range 5G smartphone."
+    keywords[3]: "5G phone","mid-range phone","balanced smartphone"
+  status: "active"
+  tags[2]: featured,popular
+
+- id: "prod_phone_005"
+  sku: "PHONE-CAMERA-005"
+  name: "PhotoPro Elite"
+  slug: "photopro-elite"
+  description: "Photography-focused smartphone with 200MP main sensor, advanced AI, and professional-grade camera features."
+  short_description: "Camera-focused phone with 200MP sensor"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 1299.99
+    currency: "USD"
+  inventory:
+    quantity: 60
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2","PhotoPro Elite",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Photo"
+    display: "6.7\" AMOLED"
+    processor: "Snapdragon 8 Gen 3"
+    ram: "12GB"
+    camera: "200MP Quad Camera + AI"
+    battery: "5200mAh"
+    5g: "Yes"
+    wireless_charging: "Yes"
+    water_resistance: "IP68"
+  seo:
+    title: "PhotoPro Elite - Camera Smartphone"
+    description: "Professional photography smartphone with 200MP camera."
+    keywords[3]: "camera phone","photography phone","200MP phone"
+  status: "active"
+  tags[2]: new,featured
+
+- id: "prod_phone_006"
+  sku: "PHONE-COMPACT-006"
+  name: "MiniPhone Compact"
+  slug: "miniphone-compact"
+  description: "Powerful performance in a compact form factor. Perfect for one-handed use without compromising on features."
+  short_description: "Compact flagship phone for one-handed use"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 899.99
+    currency: "USD"
+  inventory:
+    quantity: 70
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1556656793-08538906a9f8","MiniPhone Compact",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Mini"
+    display: "5.4\" OLED"
+    processor: "Snapdragon 8 Gen 2"
+    ram: "8GB"
+    camera: "50MP Dual Camera"
+    battery: "3500mAh"
+    5g: "Yes"
+    wireless_charging: "Yes"
+    water_resistance: "IP68"
+  seo:
+    title: "MiniPhone Compact - Small Flagship Phone"
+    description: "Compact powerful smartphone for one-handed use."
+    keywords[3]: "compact phone","small phone","mini smartphone"
+  status: "active"
+  tags[1]: new
+
+- id: "prod_phone_007"
+  sku: "PHONE-GAMING-007"
+  name: "GamePhone X1"
+  slug: "gamephone-x1"
+  description: "Gaming-optimized smartphone with cooling system, 165Hz display, and shoulder triggers for ultimate mobile gaming."
+  short_description: "Gaming phone with 165Hz display and triggers"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 999.99
+    currency: "USD"
+  inventory:
+    quantity: 50
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1585060544812-6b45742d762f","GamePhone X1",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Gaming"
+    display: "6.8\" AMOLED 165Hz"
+    processor: "Snapdragon 8 Gen 3"
+    ram: "16GB"
+    camera: "64MP Triple Camera"
+    battery: "6000mAh"
+    5g: "Yes"
+    wireless_charging: "No"
+    water_resistance: "IP54"
+  seo:
+    title: "GamePhone X1 - Mobile Gaming Phone"
+    description: "Ultimate gaming smartphone with 165Hz display."
+    keywords[3]: "gaming phone","mobile gaming","gaming smartphone"
+  status: "active"
+  tags[2]: featured,popular
+
+- id: "prod_phone_008"
+  sku: "PHONE-FOLD-008"
+  name: "FoldPhone Z Fold"
+  slug: "foldphone-z-fold"
+  description: "Innovative foldable phone that opens into a tablet. Premium hinge design and seamless multitasking experience."
+  short_description: "Foldable phone that transforms into tablet"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 1799.99
+    currency: "USD"
+  inventory:
+    quantity: 30
+    track_inventory: true
+    allow_backorder: true
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1610945415295-d9bbf067e59c","FoldPhone Z Fold",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Fold"
+    display: "7.6\" Foldable AMOLED"
+    processor: "Snapdragon 8 Gen 3"
+    ram: "12GB"
+    camera: "50MP Triple Camera"
+    battery: "4400mAh"
+    5g: "Yes"
+    wireless_charging: "Yes"
+    water_resistance: "IPX8"
+  seo:
+    title: "FoldPhone Z Fold - Foldable Smartphone"
+    description: "Innovative foldable phone with tablet experience."
+    keywords[3]: "foldable phone","folding smartphone","tablet phone"
+  status: "active"
+  tags[2]: new,featured
+
+- id: "prod_phone_009"
+  sku: "PHONE-RUGGED-009"
+  name: "ToughPhone Armor"
+  slug: "toughphone-armor"
+  description: "Military-grade rugged smartphone built for extreme conditions. Waterproof, dustproof, and drop-resistant."
+  short_description: "Rugged military-grade smartphone"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 699.99
+    currency: "USD"
+  inventory:
+    quantity: 40
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1563286102-b4c0f1320d22","ToughPhone Armor",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Rugged"
+    display: "6.5\" FHD+ IPS"
+    processor: "MediaTek Dimensity 8000"
+    ram: "8GB"
+    camera: "64MP Triple Camera"
+    battery: "6500mAh"
+    5g: "Yes"
+    wireless_charging: "No"
+    water_resistance: "IP69K + MIL-STD-810H"
+  seo:
+    title: "ToughPhone Armor - Rugged Smartphone"
+    description: "Military-grade rugged phone for extreme conditions."
+    keywords[3]: "rugged phone","tough smartphone","military phone"
+  status: "active"
+  tags[1]: popular
+
+- id: "prod_phone_010"
+  sku: "PHONE-SENIOR-010"
+  name: "EasyPhone Senior"
+  slug: "easyphone-senior"
+  description: "Simple and easy-to-use smartphone designed for seniors. Large icons, hearing aid compatibility, and emergency features."
+  short_description: "Senior-friendly smartphone with simple interface"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 249.99
+    currency: "USD"
+  inventory:
+    quantity: 90
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1567581935884-3349723552ca","EasyPhone Senior",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Care"
+    display: "6.2\" HD+ IPS"
+    processor: "MediaTek Helio G85"
+    ram: "4GB"
+    camera: "13MP Dual Camera"
+    battery: "5000mAh"
+    5g: "No"
+    wireless_charging: "No"
+    water_resistance: "IP52"
+  seo:
+    title: "EasyPhone Senior - Senior-Friendly Smartphone"
+    description: "Simple smartphone designed for seniors."
+    keywords[3]: "senior phone","easy smartphone","simple phone"
+  status: "active"
+  tags[1]: popular
+
+- id: "prod_acc_002"
+  sku: "WATCH-SMART-001"
+  name: "SmartWatch Pro Series 7"
+  slug: "smartwatch-pro-series-7"
+  description: "Advanced smartwatch with health monitoring, fitness tracking, and seamless smartphone integration."
+  short_description: "Premium smartwatch with health tracking"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 449.99
+    currency: "USD"
+  inventory:
+    quantity: 75
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1523275335684-37898b6baf30","SmartWatch Pro Series 7",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Wearables"
+    display: "1.9\" AMOLED Always-On"
+    connectivity: "Bluetooth 5.3 + WiFi"
+    battery_life: "18 hours"
+    water_resistance: "50m"
+    features: "ECG, Blood Oxygen, Sleep Tracking"
+  seo:
+    title: "SmartWatch Pro Series 7 - Premium Smartwatch"
+    description: "Advanced smartwatch with comprehensive health features."
+    keywords[3]: smartwatch,"fitness watch","health tracker"
+  status: "active"
+  tags[2]: new,featured
+
+- id: "prod_acc_003"
+  sku: "EARBUDS-PRO-001"
+  name: "AirPods Pro Max"
+  slug: "airpods-pro-max"
+  description: "Premium wireless earbuds with active noise cancellation, spatial audio, and all-day comfort."
+  short_description: "Premium ANC wireless earbuds"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 249.99
+    currency: "USD"
+    compare_at: 279.99
+  inventory:
+    quantity: 120
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1590658268037-6bf12165a8df","AirPods Pro Max",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Audio"
+    type: "In-ear"
+    connectivity: "Bluetooth 5.3"
+    battery_life: "6 hours (30 with case)"
+    anc: "Active Noise Cancellation"
+    water_resistance: "IPX4"
+  seo:
+    title: "AirPods Pro Max - Premium Wireless Earbuds"
+    description: "High-quality wireless earbuds with ANC."
+    keywords[3]: earbuds,"wireless earbuds","ANC earbuds"
+  status: "active"
+  tags[2]: featured,sale
+
+- id: "prod_acc_004"
+  sku: "CHARGER-FAST-001"
+  name: "UltraCharge 100W GaN Charger"
+  slug: "ultracharge-100w-gan-charger"
+  description: "Compact 100W GaN charger with multiple ports. Fast charge all your devices simultaneously."
+  short_description: "100W multi-port GaN fast charger"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 79.99
+    currency: "USD"
+  inventory:
+    quantity: 150
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1583863788434-e58a36330cf0","UltraCharge 100W",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Power"
+    power: "100W"
+    ports: "3x USB-C, 1x USB-A"
+    technology: "GaN III"
+    certifications: "UL, FCC, CE"
+  seo:
+    title: "UltraCharge 100W - Fast GaN Charger"
+    description: "Powerful multi-port fast charger."
+    keywords[3]: "fast charger","GaN charger","USB-C charger"
+  status: "active"
+  tags[1]: popular
+
+- id: "prod_acc_005"
+  sku: "MOUSE-WIRELESS-001"
+  name: "ProMouse Wireless Elite"
+  slug: "promouse-wireless-elite"
+  description: "Ergonomic wireless mouse with precision sensor, programmable buttons, and long battery life."
+  short_description: "Ergonomic wireless mouse for productivity"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 89.99
+    currency: "USD"
+  inventory:
+    quantity: 95
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1527864550417-7fd91fc51a46","ProMouse Wireless Elite",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Peripherals"
+    connectivity: "Bluetooth + 2.4GHz"
+    dpi: "4000 DPI"
+    battery: "70 days"
+    buttons: "7 programmable"
+  seo:
+    title: "ProMouse Wireless Elite - Ergonomic Mouse"
+    description: "Professional wireless mouse with precision."
+    keywords[3]: "wireless mouse","ergonomic mouse","productivity mouse"
+  status: "active"
+  tags[1]: featured
+
+- id: "prod_acc_006"
+  sku: "KEYBOARD-MECH-001"
+  name: "MechBoard Pro RGB"
+  slug: "mechboard-pro-rgb"
+  description: "Premium mechanical keyboard with hot-swappable switches, RGB backlighting, and aluminum frame."
+  short_description: "Premium RGB mechanical keyboard"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 159.99
+    currency: "USD"
+    compare_at: 199.99
+  inventory:
+    quantity: 60
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1595225476474-87563907a212","MechBoard Pro RGB",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Gaming"
+    switches: "Hot-swappable Mechanical"
+    backlighting: "Per-key RGB"
+    connectivity: "Wired USB-C"
+    layout: "Full-size (104 keys)"
+  seo:
+    title: "MechBoard Pro RGB - Mechanical Keyboard"
+    description: "Premium mechanical gaming keyboard."
+    keywords[3]: "mechanical keyboard","gaming keyboard","RGB keyboard"
+  status: "active"
+  tags[2]: featured,sale
+
+- id: "prod_acc_007"
+  sku: "MONITOR-4K-001"
+  name: "UltraView 4K 27-inch Monitor"
+  slug: "ultraview-4k-27inch-monitor"
+  description: "Professional 4K IPS monitor with 99% sRGB, USB-C connectivity, and ergonomic adjustments."
+  short_description: "27-inch 4K IPS professional monitor"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 499.99
+    currency: "USD"
+  inventory:
+    quantity: 45
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1527443224154-c4a3942d3acf","UltraView 4K Monitor",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Display"
+    size: "27 inches"
+    resolution: "3840x2160 (4K UHD)"
+    panel: "IPS"
+    refresh_rate: "60Hz"
+    color_accuracy: "99% sRGB"
+    ports: "HDMI, DisplayPort, USB-C"
+  seo:
+    title: "UltraView 4K 27\" - Professional Monitor"
+    description: "High-quality 4K monitor for professionals."
+    keywords[3]: "4K monitor","professional monitor","USB-C monitor"
+  status: "active"
+  tags[1]: featured
+
+- id: "prod_acc_008"
+  sku: "WEBCAM-4K-001"
+  name: "StreamCam 4K Pro"
+  slug: "streamcam-4k-pro"
+  description: "Professional 4K webcam with autofocus, HDR, and dual microphones for streaming and video calls."
+  short_description: "4K webcam for streaming and calls"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 199.99
+    currency: "USD"
+  inventory:
+    quantity: 70
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04","StreamCam 4K Pro",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Video"
+    resolution: "4K 30fps / 1080p 60fps"
+    fov: "90 degrees"
+    focus: "Autofocus"
+    microphone: "Dual stereo"
+    connectivity: "USB-C"
+  seo:
+    title: "StreamCam 4K Pro - Professional Webcam"
+    description: "High-quality 4K webcam for streaming."
+    keywords[3]: "4K webcam","streaming webcam","professional webcam"
+  status: "active"
+  tags[2]: new,popular
+
+- id: "prod_acc_009"
+  sku: "POWERBANK-001"
+  name: "PowerPack 30000mAh"
+  slug: "powerpack-30000mah"
+  description: "High-capacity portable power bank with fast charging, multiple ports, and digital display."
+  short_description: "30000mAh portable power bank"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 69.99
+    currency: "USD"
+  inventory:
+    quantity: 110
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5","PowerPack 30000mAh",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Power"
+    capacity: "30000mAh"
+    input: "USB-C 18W"
+    output: "2x USB-A + 1x USB-C PD 20W"
+    features: "Digital display, fast charging"
+  seo:
+    title: "PowerPack 30000mAh - Portable Power Bank"
+    description: "High-capacity portable charger."
+    keywords[3]: "power bank","portable charger","battery pack"
+  status: "active"
+  tags[2]: popular,sale
+
+- id: "prod_acc_010"
+  sku: "STAND-LAPTOP-001"
+  name: "ErgoStand Aluminum Laptop Stand"
+  slug: "ergostand-aluminum-laptop-stand"
+  description: "Premium aluminum laptop stand with adjustable height, ergonomic design, and cable management."
+  short_description: "Adjustable aluminum laptop stand"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 49.99
+    currency: "USD"
+  inventory:
+    quantity: 85
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1625225233840-695456021cde","ErgoStand Aluminum",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Accessories"
+    material: "Aluminum alloy"
+    compatibility: "10-17 inch laptops"
+    adjustment: "Height adjustable"
+    weight_capacity: "10 kg"
+  seo:
+    title: "ErgoStand - Aluminum Laptop Stand"
+    description: "Ergonomic laptop stand for better posture."
+    keywords[3]: "laptop stand","ergonomic stand","aluminum stand"
+  status: "active"
+  tags[1]: featured
 
 collections[2]:
 - id: "col_holiday_2025"

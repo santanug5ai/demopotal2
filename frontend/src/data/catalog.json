@@ -1,378 +1,892 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "metadata": {
     "catalog_id": "cat_electronics_2025",
-    "catalog_name": "Electronics Catalog 2025",
-    "created_at": "2025-11-20T00:00:00Z",
-    "updated_at": "2025-11-20T00:00:00Z",
-    "vendor": {
-      "id": "vendor_001",
-      "name": "TechCorp Electronics",
-      "contact": "sales@techcorp.example.com"
-    }
+    "catalog_name": "Electronics Catalog 2025"
   },
   "categories": [
     {
       "id": "cat_laptops",
       "name": "Laptops",
-      "slug": "laptops",
-      "description": "Professional and consumer laptops",
-      "parent_id": null,
-      "attributes": {
-        "icon": "laptop"
-      }
+      "slug": "laptops"
     },
     {
       "id": "cat_smartphones",
       "name": "Smartphones",
-      "slug": "smartphones",
-      "description": "Latest smartphones and mobile devices",
-      "parent_id": null,
-      "attributes": {
-        "icon": "smartphone"
-      }
+      "slug": "smartphones"
     },
     {
       "id": "cat_accessories",
       "name": "Accessories",
-      "slug": "accessories",
-      "description": "Electronic accessories and peripherals",
-      "parent_id": null,
-      "attributes": {
-        "icon": "cable"
-      }
+      "slug": "accessories"
     }
   ],
   "products": [
     {
       "id": "prod_laptop_001",
-      "sku": "LAPTOP-PRO-15-001",
       "name": "Professional Laptop Pro 15",
       "slug": "professional-laptop-pro-15",
-      "description": "High-performance laptop designed for professionals. Features the latest Intel processor, 32GB RAM, and a stunning 4K display. Perfect for creative work, development, and demanding applications.",
-      "short_description": "15-inch professional laptop with 32GB RAM and 4K display",
-      "category_ids": ["cat_laptops"],
+      "description": "High-performance laptop designed for professionals. Features the latest Intel processor, 32GB RAM, and a stunning 4K display.",
+      "shortDescription": "15-inch professional laptop with 32GB RAM and 4K display",
+      "category_ids": [
+        "cat_laptops"
+      ],
       "price": {
         "amount": 1899.99,
         "currency": "USD",
-        "compare_at": 2299.99
+        "compareAt": 2299.99
       },
       "inventory": {
         "quantity": 45,
-        "track_inventory": true,
-        "allow_backorder": false
+        "inStock": true
       },
       "images": [
         {
           "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
-          "alt": "Professional Laptop Pro 15 - Front View",
-          "position": 1,
-          "is_primary": true
-        },
-        {
-          "url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-          "alt": "Professional Laptop Pro 15 - Side View",
-          "position": 2,
-          "is_primary": false
+          "alt": "Professional Laptop Pro 15"
         }
       ],
-      "variants": [
-        {
-          "id": "var_001_silver",
-          "sku": "LAPTOP-PRO-15-001-SLV",
-          "options": {
-            "color": "Silver",
-            "storage": "512GB"
-          },
-          "price": {
-            "amount": 1899.99,
-            "currency": "USD"
-          },
-          "inventory": {
-            "quantity": 25,
-            "track_inventory": true
-          }
-        },
-        {
-          "id": "var_001_gray",
-          "sku": "LAPTOP-PRO-15-001-GRY",
-          "options": {
-            "color": "Space Gray",
-            "storage": "1TB"
-          },
-          "price": {
-            "amount": 2199.99,
-            "currency": "USD"
-          },
-          "inventory": {
-            "quantity": 20,
-            "track_inventory": true
-          }
-        }
+      "tags": [
+        "new",
+        "featured",
+        "sale"
       ],
-      "attributes": {
-        "brand": "TechCorp",
-        "processor": "Intel Core i7 12th Gen",
-        "ram": "32GB DDR5",
-        "storage": "512GB NVMe SSD",
-        "display": "15.6\" 4K OLED",
-        "graphics": "NVIDIA RTX 3060",
-        "weight": "1.8 kg",
-        "battery": "Up to 12 hours",
-        "warranty": "2 years"
-      },
-      "seo": {
-        "title": "Professional Laptop Pro 15 - High Performance Laptop for Professionals",
-        "description": "Buy the Professional Laptop Pro 15 with 32GB RAM, 4K display, and Intel Core i7. Perfect for creative professionals and developers.",
-        "keywords": ["laptop", "professional laptop", "4K laptop", "high performance"]
-      },
-      "status": "active",
-      "tags": ["new", "featured", "sale"]
+      "status": "active"
     },
     {
       "id": "prod_phone_001",
-      "sku": "PHONE-ULTRA-001",
       "name": "UltraPhone X1",
       "slug": "ultraphone-x1",
-      "description": "The latest flagship smartphone with cutting-edge technology. Features a 6.7-inch AMOLED display, advanced camera system, and all-day battery life. Experience the future of mobile technology.",
-      "short_description": "Premium flagship smartphone with advanced camera system",
-      "category_ids": ["cat_smartphones"],
+      "description": "The latest flagship smartphone with cutting-edge technology. Features a 6.7-inch AMOLED display, advanced camera system, and all-day battery life.",
+      "shortDescription": "Premium flagship smartphone with advanced camera system",
+      "category_ids": [
+        "cat_smartphones"
+      ],
       "price": {
         "amount": 1199.99,
-        "currency": "USD",
-        "compare_at": null
+        "currency": "USD"
       },
       "inventory": {
         "quantity": 120,
-        "track_inventory": true,
-        "allow_backorder": false
+        "inStock": true
       },
       "images": [
         {
           "url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
-          "alt": "UltraPhone X1 - Front Display",
-          "position": 1,
-          "is_primary": true
-        },
-        {
-          "url": "https://images.unsplash.com/photo-1592286927505-b6e1f4c56c77",
-          "alt": "UltraPhone X1 - Back Camera",
-          "position": 2,
-          "is_primary": false
+          "alt": "UltraPhone X1"
         }
       ],
-      "variants": [
-        {
-          "id": "var_002_black_128",
-          "sku": "PHONE-ULTRA-001-BLK-128",
-          "options": {
-            "color": "Midnight Black",
-            "storage": "128GB"
-          },
-          "price": {
-            "amount": 1199.99,
-            "currency": "USD"
-          },
-          "inventory": {
-            "quantity": 60,
-            "track_inventory": true
-          }
-        },
-        {
-          "id": "var_002_blue_256",
-          "sku": "PHONE-ULTRA-001-BLU-256",
-          "options": {
-            "color": "Ocean Blue",
-            "storage": "256GB"
-          },
-          "price": {
-            "amount": 1399.99,
-            "currency": "USD"
-          },
-          "inventory": {
-            "quantity": 40,
-            "track_inventory": true
-          }
-        },
-        {
-          "id": "var_002_white_512",
-          "sku": "PHONE-ULTRA-001-WHT-512",
-          "options": {
-            "color": "Pearl White",
-            "storage": "512GB"
-          },
-          "price": {
-            "amount": 1599.99,
-            "currency": "USD"
-          },
-          "inventory": {
-            "quantity": 20,
-            "track_inventory": true
-          }
-        }
+      "tags": [
+        "new",
+        "featured",
+        "5g"
       ],
-      "attributes": {
-        "brand": "TechCorp",
-        "display": "6.7\" AMOLED",
-        "processor": "Snapdragon 8 Gen 3",
-        "ram": "12GB",
-        "camera": "108MP Triple Camera",
-        "battery": "5000mAh",
-        "5g": "Yes",
-        "wireless_charging": "Yes",
-        "water_resistance": "IP68"
-      },
-      "seo": {
-        "title": "UltraPhone X1 - Premium Flagship Smartphone",
-        "description": "Experience the UltraPhone X1 with 108MP camera, 6.7\" AMOLED display, and 5G connectivity. The ultimate smartphone.",
-        "keywords": ["smartphone", "5G phone", "flagship phone", "camera phone"]
-      },
-      "status": "active",
-      "tags": ["new", "featured", "5g"]
+      "status": "active"
     },
     {
       "id": "prod_acc_001",
-      "sku": "HEADPHONE-NC-001",
       "name": "Premium Noise Cancelling Headphones",
       "slug": "premium-noise-cancelling-headphones",
-      "description": "Immerse yourself in pure sound with our Premium Noise Cancelling Headphones. Industry-leading ANC technology, premium audio quality, and up to 30 hours of battery life. Perfect for travel and daily commute.",
-      "short_description": "Wireless headphones with active noise cancellation",
-      "category_ids": ["cat_accessories"],
+      "description": "Immerse yourself in pure sound with our Premium Noise Cancelling Headphones. Industry-leading ANC technology, premium audio quality, and up to 30 hours of battery life.",
+      "shortDescription": "Wireless headphones with active noise cancellation",
+      "category_ids": [
+        "cat_accessories"
+      ],
       "price": {
         "amount": 349.99,
         "currency": "USD",
-        "compare_at": 399.99
+        "compareAt": 399.99
       },
       "inventory": {
         "quantity": 85,
-        "track_inventory": true,
-        "allow_backorder": true
+        "inStock": true
       },
       "images": [
         {
           "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
-          "alt": "Premium Noise Cancelling Headphones",
-          "position": 1,
-          "is_primary": true
+          "alt": "Premium Noise Cancelling Headphones"
         }
       ],
-      "variants": [],
-      "attributes": {
-        "brand": "TechCorp Audio",
-        "type": "Over-ear",
-        "connectivity": "Bluetooth 5.2",
-        "battery_life": "30 hours",
-        "anc": "Active Noise Cancellation",
-        "weight": "250g",
-        "color": "Black"
-      },
-      "seo": {
-        "title": "Premium Noise Cancelling Headphones - Wireless ANC Headphones",
-        "description": "Premium wireless headphones with active noise cancellation. 30-hour battery life and superior audio quality.",
-        "keywords": ["headphones", "noise cancelling", "wireless headphones", "ANC"]
-      },
-      "status": "active",
-      "tags": ["sale", "popular"]
+      "tags": [
+        "sale",
+        "popular"
+      ],
+      "status": "active"
     },
     {
       "id": "prod_laptop_002",
-      "sku": "LAPTOP-SLIM-13-001",
       "name": "SlimBook Air 13",
       "slug": "slimbook-air-13",
-      "description": "Ultraportable laptop that doesn't compromise on performance. Ultra-thin design, all-day battery life, and powerful performance in a sleek package. Ideal for students and mobile professionals.",
-      "short_description": "Ultra-thin 13-inch laptop with all-day battery",
-      "category_ids": ["cat_laptops"],
+      "description": "Ultraportable laptop that doesn't compromise on performance. Ultra-thin design, all-day battery life, and powerful performance in a sleek package.",
+      "shortDescription": "Ultra-thin 13-inch laptop with all-day battery",
+      "category_ids": [
+        "cat_laptops"
+      ],
       "price": {
         "amount": 999.99,
-        "currency": "USD",
-        "compare_at": null
+        "currency": "USD"
       },
       "inventory": {
         "quantity": 65,
-        "track_inventory": true,
-        "allow_backorder": false
+        "inStock": true
       },
       "images": [
         {
           "url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-          "alt": "SlimBook Air 13",
-          "position": 1,
-          "is_primary": true
+          "alt": "SlimBook Air 13"
         }
       ],
-      "variants": [
-        {
-          "id": "var_003_gold",
-          "sku": "LAPTOP-SLIM-13-001-GLD",
-          "options": {
-            "color": "Gold",
-            "storage": "256GB"
-          },
-          "price": {
-            "amount": 999.99,
-            "currency": "USD"
-          },
-          "inventory": {
-            "quantity": 30,
-            "track_inventory": true
-          }
-        },
-        {
-          "id": "var_003_silver",
-          "sku": "LAPTOP-SLIM-13-001-SLV",
-          "options": {
-            "color": "Silver",
-            "storage": "512GB"
-          },
-          "price": {
-            "amount": 1199.99,
-            "currency": "USD"
-          },
-          "inventory": {
-            "quantity": 35,
-            "track_inventory": true
-          }
-        }
+      "tags": [
+        "popular"
       ],
-      "attributes": {
-        "brand": "TechCorp",
-        "processor": "Intel Core i5",
-        "ram": "16GB",
-        "storage": "256GB SSD",
-        "display": "13.3\" Retina",
-        "weight": "1.2 kg",
-        "battery": "Up to 18 hours",
-        "warranty": "1 year"
-      },
-      "seo": {
-        "title": "SlimBook Air 13 - Ultra-Portable Laptop",
-        "description": "Ultra-thin SlimBook Air 13 with 18-hour battery life. Perfect laptop for students and professionals on the go.",
-        "keywords": ["ultrabook", "thin laptop", "portable laptop", "student laptop"]
-      },
-      "status": "active",
-      "tags": ["popular"]
-    }
-  ],
-  "collections": [
-    {
-      "id": "col_holiday_2025",
-      "name": "Holiday Sale 2025",
-      "slug": "holiday-sale-2025",
-      "description": "Amazing deals for the holiday season",
-      "product_ids": ["prod_laptop_001", "prod_acc_001"],
-      "rules": {
-        "tags": ["sale"]
-      }
+      "status": "active"
     },
     {
-      "id": "col_new_arrivals",
-      "name": "New Arrivals",
-      "slug": "new-arrivals",
-      "description": "Latest products in our catalog",
-      "product_ids": ["prod_laptop_001", "prod_phone_001"],
-      "rules": {
-        "tags": ["new"]
-      }
+      "id": "prod_laptop_003",
+      "name": "Gaming Beast Pro 17",
+      "slug": "gaming-beast-pro-17",
+      "description": "Ultimate gaming laptop with RTX 4080, 64GB RAM, and 17-inch 240Hz display. Dominate any game with maximum settings.",
+      "shortDescription": "17-inch gaming laptop with RTX 4080 and 240Hz display",
+      "category_ids": [
+        "cat_laptops"
+      ],
+      "price": {
+        "amount": 2899.99,
+        "currency": "USD",
+        "compareAt": 3299.99
+      },
+      "inventory": {
+        "quantity": 25,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302",
+          "alt": "Gaming Beast Pro 17"
+        }
+      ],
+      "tags": [
+        "featured",
+        "sale"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_laptop_004",
+      "name": "Business Elite 14",
+      "slug": "business-elite-14",
+      "description": "Professional business laptop with enterprise-grade security, long battery life, and premium build quality.",
+      "shortDescription": "14-inch business laptop with enterprise security",
+      "category_ids": [
+        "cat_laptops"
+      ],
+      "price": {
+        "amount": 1499.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 40,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed",
+          "alt": "Business Elite 14"
+        }
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_laptop_005",
+      "name": "Creator Studio 15",
+      "slug": "creator-studio-15",
+      "description": "Content creator's dream laptop with color-accurate 4K OLED display, powerful GPU, and optimized for creative applications.",
+      "shortDescription": "15-inch creator laptop with 4K OLED display",
+      "category_ids": [
+        "cat_laptops"
+      ],
+      "price": {
+        "amount": 2199.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 30,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45",
+          "alt": "Creator Studio 15"
+        }
+      ],
+      "tags": [
+        "featured",
+        "new"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_laptop_006",
+      "name": "Student Buddy 15",
+      "slug": "student-buddy-15",
+      "description": "Affordable and reliable laptop perfect for students. Great performance for everyday tasks and study needs.",
+      "shortDescription": "Budget-friendly 15-inch laptop for students",
+      "category_ids": [
+        "cat_laptops"
+      ],
+      "price": {
+        "amount": 599.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 80,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1484788984921-03950022c9ef",
+          "alt": "Student Buddy 15"
+        }
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_laptop_007",
+      "name": "UltraBook X14",
+      "slug": "ultrabook-x14",
+      "description": "Premium ultrabook with stunning design, exceptional performance, and all-day battery life in a lightweight chassis.",
+      "shortDescription": "Premium 14-inch ultrabook with all-day battery",
+      "category_ids": [
+        "cat_laptops"
+      ],
+      "price": {
+        "amount": 1799.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 35,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+          "alt": "UltraBook X14"
+        }
+      ],
+      "tags": [
+        "new",
+        "featured"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_laptop_008",
+      "name": "WorkStation Pro 16",
+      "slug": "workstation-pro-16",
+      "description": "Professional workstation laptop for engineers, architects, and developers. Powerful specs with ISV certifications.",
+      "shortDescription": "16-inch workstation laptop for professionals",
+      "category_ids": [
+        "cat_laptops"
+      ],
+      "price": {
+        "amount": 3499.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 15,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1616763355603-9755a640a287",
+          "alt": "WorkStation Pro 16"
+        }
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_laptop_009",
+      "name": "FlexBook 2-in-1 13",
+      "slug": "flexbook-2in1-13",
+      "description": "Versatile 2-in-1 laptop that transforms into a tablet. Touch screen with stylus support for maximum flexibility.",
+      "shortDescription": "13-inch 2-in-1 convertible laptop with stylus",
+      "category_ids": [
+        "cat_laptops"
+      ],
+      "price": {
+        "amount": 1299.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 50,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae",
+          "alt": "FlexBook 2-in-1 13"
+        }
+      ],
+      "tags": [
+        "new"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_laptop_010",
+      "name": "EconoBook 15",
+      "slug": "econobook-15",
+      "description": "Basic laptop for everyday computing needs. Perfect for web browsing, email, and document work at an unbeatable price.",
+      "shortDescription": "Entry-level 15-inch laptop for basic tasks",
+      "category_ids": [
+        "cat_laptops"
+      ],
+      "price": {
+        "amount": 399.99,
+        "currency": "USD",
+        "compareAt": 499.99
+      },
+      "inventory": {
+        "quantity": 100,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed",
+          "alt": "EconoBook 15"
+        }
+      ],
+      "tags": [
+        "sale",
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_002",
+      "name": "ProPhone Max",
+      "slug": "prophone-max",
+      "description": "Premium flagship with advanced camera system, A17 Pro chip, and titanium design. The ultimate smartphone experience.",
+      "shortDescription": "Premium flagship with advanced features",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 1399.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 80,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1592286927505-b6e1f4c56c77",
+          "alt": "ProPhone Max"
+        }
+      ],
+      "tags": [
+        "new",
+        "featured"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_003",
+      "name": "ValuePhone A1",
+      "slug": "valuephone-a1",
+      "description": "Affordable smartphone with essential features. Great performance for everyday use without breaking the bank.",
+      "shortDescription": "Budget-friendly smartphone with essential features",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 299.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 150,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97",
+          "alt": "ValuePhone A1"
+        }
+      ],
+      "tags": [
+        "popular",
+        "sale"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_004",
+      "name": "MidRange Pro 5G",
+      "slug": "midrange-pro-5g",
+      "description": "Perfect balance of features and price. 5G connectivity, great camera, and smooth performance for everyday use.",
+      "shortDescription": "Mid-range 5G smartphone with balanced features",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 599.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 100,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb",
+          "alt": "MidRange Pro 5G"
+        }
+      ],
+      "tags": [
+        "featured",
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_005",
+      "name": "PhotoPro Elite",
+      "slug": "photopro-elite",
+      "description": "Photography-focused smartphone with 200MP main sensor, advanced AI, and professional-grade camera features.",
+      "shortDescription": "Camera-focused phone with 200MP sensor",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 1299.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 60,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2",
+          "alt": "PhotoPro Elite"
+        }
+      ],
+      "tags": [
+        "new",
+        "featured"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_006",
+      "name": "MiniPhone Compact",
+      "slug": "miniphone-compact",
+      "description": "Powerful performance in a compact form factor. Perfect for one-handed use without compromising on features.",
+      "shortDescription": "Compact flagship phone for one-handed use",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 899.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 70,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1556656793-08538906a9f8",
+          "alt": "MiniPhone Compact"
+        }
+      ],
+      "tags": [
+        "new"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_007",
+      "name": "GamePhone X1",
+      "slug": "gamephone-x1",
+      "description": "Gaming-optimized smartphone with cooling system, 165Hz display, and shoulder triggers for ultimate mobile gaming.",
+      "shortDescription": "Gaming phone with 165Hz display and triggers",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 999.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 50,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1585060544812-6b45742d762f",
+          "alt": "GamePhone X1"
+        }
+      ],
+      "tags": [
+        "featured",
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_008",
+      "name": "FoldPhone Z Fold",
+      "slug": "foldphone-z-fold",
+      "description": "Innovative foldable phone that opens into a tablet. Premium hinge design and seamless multitasking experience.",
+      "shortDescription": "Foldable phone that transforms into tablet",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 1799.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 30,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c",
+          "alt": "FoldPhone Z Fold"
+        }
+      ],
+      "tags": [
+        "new",
+        "featured"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_009",
+      "name": "ToughPhone Armor",
+      "slug": "toughphone-armor",
+      "description": "Military-grade rugged smartphone built for extreme conditions. Waterproof, dustproof, and drop-resistant.",
+      "shortDescription": "Rugged military-grade smartphone",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 699.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 40,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1563286102-b4c0f1320d22",
+          "alt": "ToughPhone Armor"
+        }
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_phone_010",
+      "name": "EasyPhone Senior",
+      "slug": "easyphone-senior",
+      "description": "Simple and easy-to-use smartphone designed for seniors. Large icons, hearing aid compatibility, and emergency features.",
+      "shortDescription": "Senior-friendly smartphone with simple interface",
+      "category_ids": [
+        "cat_smartphones"
+      ],
+      "price": {
+        "amount": 249.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 90,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1567581935884-3349723552ca",
+          "alt": "EasyPhone Senior"
+        }
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_002",
+      "name": "SmartWatch Pro Series 7",
+      "slug": "smartwatch-pro-series-7",
+      "description": "Advanced smartwatch with health monitoring, fitness tracking, and seamless smartphone integration.",
+      "shortDescription": "Premium smartwatch with health tracking",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 449.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 75,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+          "alt": "SmartWatch Pro Series 7"
+        }
+      ],
+      "tags": [
+        "new",
+        "featured"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_003",
+      "name": "AirPods Pro Max",
+      "slug": "airpods-pro-max",
+      "description": "Premium wireless earbuds with active noise cancellation, spatial audio, and all-day comfort.",
+      "shortDescription": "Premium ANC wireless earbuds",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 249.99,
+        "currency": "USD",
+        "compareAt": 279.99
+      },
+      "inventory": {
+        "quantity": 120,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df",
+          "alt": "AirPods Pro Max"
+        }
+      ],
+      "tags": [
+        "featured",
+        "sale"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_004",
+      "name": "UltraCharge 100W GaN Charger",
+      "slug": "ultracharge-100w-gan-charger",
+      "description": "Compact 100W GaN charger with multiple ports. Fast charge all your devices simultaneously.",
+      "shortDescription": "100W multi-port GaN fast charger",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 79.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 150,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0",
+          "alt": "UltraCharge 100W GaN Charger"
+        }
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_005",
+      "name": "ProMouse Wireless Elite",
+      "slug": "promouse-wireless-elite",
+      "description": "Ergonomic wireless mouse with precision sensor, programmable buttons, and long battery life.",
+      "shortDescription": "Ergonomic wireless mouse for productivity",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 89.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 95,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46",
+          "alt": "ProMouse Wireless Elite"
+        }
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_006",
+      "name": "MechBoard Pro RGB",
+      "slug": "mechboard-pro-rgb",
+      "description": "Premium mechanical keyboard with hot-swappable switches, RGB backlighting, and aluminum frame.",
+      "shortDescription": "Premium RGB mechanical keyboard",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 159.99,
+        "currency": "USD",
+        "compareAt": 199.99
+      },
+      "inventory": {
+        "quantity": 60,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1595225476474-87563907a212",
+          "alt": "MechBoard Pro RGB"
+        }
+      ],
+      "tags": [
+        "featured",
+        "sale"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_007",
+      "name": "UltraView 4K 27-inch Monitor",
+      "slug": "ultraview-4k-27inch-monitor",
+      "description": "Professional 4K IPS monitor with 99% sRGB, USB-C connectivity, and ergonomic adjustments.",
+      "shortDescription": "27-inch 4K IPS professional monitor",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 499.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 45,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf",
+          "alt": "UltraView 4K 27-inch Monitor"
+        }
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_008",
+      "name": "StreamCam 4K Pro",
+      "slug": "streamcam-4k-pro",
+      "description": "Professional 4K webcam with autofocus, HDR, and dual microphones for streaming and video calls.",
+      "shortDescription": "4K webcam for streaming and calls",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 199.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 70,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04",
+          "alt": "StreamCam 4K Pro"
+        }
+      ],
+      "tags": [
+        "new",
+        "popular"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_009",
+      "name": "PowerPack 30000mAh",
+      "slug": "powerpack-30000mah",
+      "description": "High-capacity portable power bank with fast charging, multiple ports, and digital display.",
+      "shortDescription": "30000mAh portable power bank",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 69.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 110,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5",
+          "alt": "PowerPack 30000mAh"
+        }
+      ],
+      "tags": [
+        "popular",
+        "sale"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "prod_acc_010",
+      "name": "ErgoStand Aluminum Laptop Stand",
+      "slug": "ergostand-aluminum-laptop-stand",
+      "description": "Premium aluminum laptop stand with adjustable height, ergonomic design, and cable management.",
+      "shortDescription": "Adjustable aluminum laptop stand",
+      "category_ids": [
+        "cat_accessories"
+      ],
+      "price": {
+        "amount": 49.99,
+        "currency": "USD"
+      },
+      "inventory": {
+        "quantity": 85,
+        "inStock": true
+      },
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1625225233840-695456021cde",
+          "alt": "ErgoStand Aluminum Laptop Stand"
+        }
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "active"
     }
   ]
 }
