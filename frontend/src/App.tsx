@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Toaster } from 'sonner'
 import Layout from './components/layout/Layout'
+import ChatBot from './components/ChatBot/ChatBot'
 import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
 import ProductDetailPage from './pages/ProductDetailPage'
@@ -19,6 +20,7 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
       </Layout>
+      <ChatBot />
       <Toaster position="top-right" richColors />
     </Router>
   )

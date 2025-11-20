@@ -1,0 +1,176 @@
+version: "2.0"
+metadata:
+  catalog_id: "cat_electronics_2025"
+  catalog_name: "Electronics Catalog 2025"
+  created_at: "2025-11-20T00:00:00Z"
+  updated_at: "2025-11-20T00:00:00Z"
+  vendor:
+    id: "vendor_001"
+    name: "TechCorp Electronics"
+    contact: "sales@techcorp.example.com"
+
+categories[3]{id,name,slug,description}:
+cat_laptops,Laptops,laptops,"Professional and consumer laptops"
+cat_smartphones,Smartphones,smartphones,"Latest smartphones and mobile devices"
+cat_accessories,Accessories,accessories,"Electronic accessories and peripherals"
+
+products[4]:
+- id: "prod_laptop_001"
+  sku: "LAPTOP-PRO-15-001"
+  name: "Professional Laptop Pro 15"
+  slug: "professional-laptop-pro-15"
+  description: "High-performance laptop designed for professionals. Features the latest Intel processor, 32GB RAM, and a stunning 4K display."
+  short_description: "15-inch professional laptop with 32GB RAM and 4K display"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 1899.99
+    currency: "USD"
+    compare_at: 2299.99
+  inventory:
+    quantity: 45
+    track_inventory: true
+    allow_backorder: false
+  images[2]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1496181133206-80ce9b88a853","Professional Laptop Pro 15 - Front View",1,true
+"https://images.unsplash.com/photo-1517336714731-489689fd1ca8","Professional Laptop Pro 15 - Side View",2,false
+  variants[2]{id,sku,color,storage,price,inventory_qty}:
+var_001_silver,LAPTOP-PRO-15-001-SLV,Silver,512GB,1899.99,25
+var_001_gray,LAPTOP-PRO-15-001-GRY,"Space Gray",1TB,2199.99,20
+  attributes:
+    brand: "TechCorp"
+    processor: "Intel Core i7 12th Gen"
+    ram: "32GB DDR5"
+    storage: "512GB NVMe SSD"
+    display: "15.6\" 4K OLED"
+    graphics: "NVIDIA RTX 3060"
+    weight: "1.8 kg"
+    battery: "Up to 12 hours"
+    warranty: "2 years"
+  seo:
+    title: "Professional Laptop Pro 15 - High Performance Laptop"
+    description: "Buy the Professional Laptop Pro 15 with 32GB RAM, 4K display, and Intel Core i7."
+    keywords[3]: laptop,"professional laptop","4K laptop"
+  status: "active"
+  tags[3]: new,featured,sale
+
+- id: "prod_phone_001"
+  sku: "PHONE-ULTRA-001"
+  name: "UltraPhone X1"
+  slug: "ultraphone-x1"
+  description: "The latest flagship smartphone with cutting-edge technology. Features a 6.7-inch AMOLED display, advanced camera system, and all-day battery life."
+  short_description: "Premium flagship smartphone with advanced camera system"
+  category_ids[1]: cat_smartphones
+  price:
+    amount: 1199.99
+    currency: "USD"
+  inventory:
+    quantity: 120
+    track_inventory: true
+    allow_backorder: false
+  images[2]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9","UltraPhone X1 - Front Display",1,true
+"https://images.unsplash.com/photo-1592286927505-b6e1f4c56c77","UltraPhone X1 - Back Camera",2,false
+  variants[3]{id,sku,color,storage,price,inventory_qty}:
+var_002_black_128,PHONE-ULTRA-001-BLK-128,"Midnight Black",128GB,1199.99,60
+var_002_blue_256,PHONE-ULTRA-001-BLU-256,"Ocean Blue",256GB,1399.99,40
+var_002_white_512,PHONE-ULTRA-001-WHT-512,"Pearl White",512GB,1599.99,20
+  attributes:
+    brand: "TechCorp"
+    display: "6.7\" AMOLED"
+    processor: "Snapdragon 8 Gen 3"
+    ram: "12GB"
+    camera: "108MP Triple Camera"
+    battery: "5000mAh"
+    5g: "Yes"
+    wireless_charging: "Yes"
+    water_resistance: "IP68"
+  seo:
+    title: "UltraPhone X1 - Premium Flagship Smartphone"
+    description: "Experience the UltraPhone X1 with 108MP camera and 5G."
+    keywords[4]: smartphone,"5G phone","flagship phone","camera phone"
+  status: "active"
+  tags[3]: new,featured,5g
+
+- id: "prod_acc_001"
+  sku: "HEADPHONE-NC-001"
+  name: "Premium Noise Cancelling Headphones"
+  slug: "premium-noise-cancelling-headphones"
+  description: "Immerse yourself in pure sound with our Premium Noise Cancelling Headphones. Industry-leading ANC technology, premium audio quality, and up to 30 hours of battery life."
+  short_description: "Wireless headphones with active noise cancellation"
+  category_ids[1]: cat_accessories
+  price:
+    amount: 349.99
+    currency: "USD"
+    compare_at: 399.99
+  inventory:
+    quantity: 85
+    track_inventory: true
+    allow_backorder: true
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1505740420928-5e560c06d30e","Premium Noise Cancelling Headphones",1,true
+  variants[0]:
+  attributes:
+    brand: "TechCorp Audio"
+    type: "Over-ear"
+    connectivity: "Bluetooth 5.2"
+    battery_life: "30 hours"
+    anc: "Active Noise Cancellation"
+    weight: "250g"
+    color: "Black"
+  seo:
+    title: "Premium Noise Cancelling Headphones - Wireless ANC"
+    description: "Premium wireless headphones with active noise cancellation."
+    keywords[3]: headphones,"noise cancelling","wireless headphones"
+  status: "active"
+  tags[2]: sale,popular
+
+- id: "prod_laptop_002"
+  sku: "LAPTOP-SLIM-13-001"
+  name: "SlimBook Air 13"
+  slug: "slimbook-air-13"
+  description: "Ultraportable laptop that doesn't compromise on performance. Ultra-thin design, all-day battery life, and powerful performance in a sleek package."
+  short_description: "Ultra-thin 13-inch laptop with all-day battery"
+  category_ids[1]: cat_laptops
+  price:
+    amount: 999.99
+    currency: "USD"
+  inventory:
+    quantity: 65
+    track_inventory: true
+    allow_backorder: false
+  images[1]{url,alt,position,is_primary}:
+"https://images.unsplash.com/photo-1517694712202-14dd9538aa97","SlimBook Air 13",1,true
+  variants[2]{id,sku,color,storage,price,inventory_qty}:
+var_003_gold,LAPTOP-SLIM-13-001-GLD,Gold,256GB,999.99,30
+var_003_silver,LAPTOP-SLIM-13-001-SLV,Silver,512GB,1199.99,35
+  attributes:
+    brand: "TechCorp"
+    processor: "Intel Core i5"
+    ram: "16GB"
+    storage: "256GB SSD"
+    display: "13.3\" Retina"
+    weight: "1.2 kg"
+    battery: "Up to 18 hours"
+    warranty: "1 year"
+  seo:
+    title: "SlimBook Air 13 - Ultra-Portable Laptop"
+    description: "Ultra-thin SlimBook Air 13 with 18-hour battery life."
+    keywords[3]: ultrabook,"thin laptop","portable laptop"
+  status: "active"
+  tags[1]: popular
+
+collections[2]:
+- id: "col_holiday_2025"
+  name: "Holiday Sale 2025"
+  slug: "holiday-sale-2025"
+  description: "Amazing deals for the holiday season"
+  product_ids[2]: prod_laptop_001,prod_acc_001
+  rules:
+    tags[1]: sale
+- id: "col_new_arrivals"
+  name: "New Arrivals"
+  slug: "new-arrivals"
+  description: "Latest products in our catalog"
+  product_ids[2]: prod_laptop_001,prod_phone_001
+  rules:
+    tags[1]: new
