@@ -6,7 +6,7 @@ A modern, professional e-commerce marketplace platform with .toon format data so
 
 **[View Live Demo](https://santanug5ai.github.io/demopotal2/)**
 
-> **Note**: The live demo is a static frontend preview. For full functionality including backend API and database features, please run the application locally.
+> **Note**: The live demo is a static frontend preview. For full functionality including the backend API, please run the application locally. This application uses .toon format files for data storage - **no database required**!
 
 ## Features
 
@@ -30,12 +30,11 @@ A modern, professional e-commerce marketplace platform with .toon format data so
 - React Router for navigation
 
 ### Backend
-- Node.js 20+ with TypeScript
-- NestJS framework
-- PostgreSQL database
-- Prisma ORM
-- Redis for caching
-- JWT authentication
+- Node.js 20+ with ES Modules
+- Express.js framework
+- **File-based storage** using .toon format
+- No database required! All data stored in JSON .toon files
+- Simple REST API
 
 ## Project Structure
 
@@ -51,12 +50,9 @@ A modern, professional e-commerce marketplace platform with .toon format data so
 │   │   └── types/     # TypeScript types
 │   └── package.json
 │
-├── backend/           # NestJS backend application
+├── backend/           # Express.js backend application
 │   ├── src/
-│   │   ├── modules/   # Feature modules
-│   │   ├── common/    # Shared utilities
-│   │   ├── config/    # Configuration
-│   │   └── prisma/    # Database schema
+│   │   └── index.js   # Main API server (reads/writes .toon files)
 │   └── package.json
 │
 ├── data/              # Sample .toon format files
@@ -70,9 +66,9 @@ A modern, professional e-commerce marketplace platform with .toon format data so
 ### Prerequisites
 
 - Node.js 20+
-- PostgreSQL 15+
-- Redis (optional, for caching)
 - npm or yarn
+
+**That's it! No database installation required!** All data is stored in `.toon` format JSON files.
 
 ### Installation
 
@@ -87,7 +83,7 @@ cd demopotal2
 npm install
 ```
 
-3. Set up environment variables:
+3. Set up environment variables (optional):
 ```bash
 # Backend
 cp backend/.env.example backend/.env
@@ -96,14 +92,7 @@ cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env
 ```
 
-4. Set up the database:
-```bash
-cd backend
-npm run prisma:migrate
-npm run prisma:seed
-```
-
-5. Start the development servers:
+4. Start the development servers:
 ```bash
 # From root directory
 npm run dev
