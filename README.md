@@ -60,7 +60,8 @@ A modern, professional e-commerce marketplace platform with .toon format data so
 │   └── package.json
 │
 ├── data/              # Sample .toon format files
-└── docs/              # Additional documentation
+├── docs/              # GitHub Pages site (auto-generated)
+└── documentation/     # Project documentation
 
 ```
 
@@ -160,8 +161,9 @@ The `.toon` format is a structured JSON format for product catalogs. See [SPECIF
 ## Documentation
 
 - [Full Specification](./SPECIFICATION.md) - Comprehensive system specification
-- [API Documentation](./docs/API.md) - API endpoints and usage
-- [.toon Format Guide](./docs/TOON_FORMAT.md) - .toon format specification
+- [API Documentation](./documentation/API.md) - API endpoints and usage
+- [.toon Format Guide](./documentation/TOON_FORMAT.md) - .toon format specification
+- [Getting Started Guide](./documentation/GETTING_STARTED.md) - Setup instructions
 
 ## Contributing
 
