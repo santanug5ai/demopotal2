@@ -2,6 +2,12 @@
 
 A modern, professional e-commerce marketplace platform with .toon format data source integration.
 
+## 🚀 Live Demo
+
+**[View Live Demo](https://santanug5ai.github.io/demopotal2/)**
+
+> **Note**: The live demo is a static frontend preview. For full functionality including backend API and database features, please run the application locally.
+
 ## Features
 
 - 🛍️ Multi-vendor marketplace
