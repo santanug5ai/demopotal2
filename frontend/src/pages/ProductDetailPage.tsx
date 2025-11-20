@@ -63,8 +63,9 @@ export default function ProductDetailPage() {
           <div className="space-y-4">
             <div className="relative aspect-square rounded-2xl overflow-hidden bg-white border-2 border-gray-200">
               <img
-                src={product.images[selectedImage]?.url}
+                src={`${product.images[selectedImage]?.url}?auto=format&fit=crop&w=800&q=85`}
                 alt={product.images[selectedImage]?.alt}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
               {product.tags.includes('sale') && hasDiscount && (
@@ -90,8 +91,9 @@ export default function ProductDetailPage() {
                     }`}
                   >
                     <img
-                      src={image.url}
+                      src={`${image.url}?auto=format&fit=crop&w=150&q=80`}
                       alt={image.alt}
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </button>
