@@ -63,7 +63,7 @@ export default function ProductDetailPage() {
           <div className="space-y-4">
             <div className="relative aspect-square rounded-2xl overflow-hidden bg-white border-2 border-gray-200">
               <img
-                src={`${product.images[selectedImage]?.url}?auto=format&fit=crop&w=800&q=85`}
+                src={`${product.images[selectedImage]?.url}?auto=format&fit=crop&w=600&q=75`}
                 alt={product.images[selectedImage]?.alt}
                 loading="lazy"
                 className="w-full h-full object-cover"
@@ -91,7 +91,7 @@ export default function ProductDetailPage() {
                     }`}
                   >
                     <img
-                      src={`${image.url}?auto=format&fit=crop&w=150&q=80`}
+                      src={`${image.url}?auto=format&fit=crop&w=120&q=70`}
                       alt={image.alt}
                       loading="lazy"
                       className="w-full h-full object-cover"

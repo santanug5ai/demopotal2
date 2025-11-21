@@ -1,0 +1,1 @@
+import{j as r}from"./index-CICSFOD4.js";import"./react-vendor-Du3qNg1X.js";import"./ui-vendor-EnO_RLil.js";function t(){return r.jsxs("div",{className:"container mx-auto px-4 py-8",children:[r.jsx("h1",{className:"text-3xl font-bold",children:"Shopping Cart"}),r.jsx("p",{className:"text-gray-600",children:"Your cart is currently empty"})]})}export{t as default};

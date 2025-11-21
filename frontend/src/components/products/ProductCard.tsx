@@ -19,7 +19,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <Link to={`/products/${product.slug}`}>
         <div className="relative aspect-square overflow-hidden bg-gray-100">
           <img
-            src={`${primaryImage?.url}?auto=format&fit=crop&w=400&q=80`}
+            src={`${primaryImage?.url}?auto=format&fit=crop&w=300&q=70`}
             alt={primaryImage?.alt || product.name}
             loading="lazy"
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"

@@ -1,0 +1,1 @@
+import{j as e}from"./index-CICSFOD4.js";import"./react-vendor-Du3qNg1X.js";import"./ui-vendor-EnO_RLil.js";function r(){return e.jsxs("div",{className:"container mx-auto px-4 py-8",children:[e.jsx("h1",{className:"text-3xl font-bold",children:"Checkout"}),e.jsx("p",{className:"text-gray-600",children:"Complete your purchase"})]})}export{r as default};
